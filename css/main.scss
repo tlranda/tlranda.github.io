@@ -2,7 +2,6 @@
 # Front matter comment to ensure Jekyll properly reads this file
 ---
 
-@import "BASE.SCSS",
-        "layout",
-        "syntax-highlighting"
-
+@import "base";
+@import "layout";
+@import "syntax-highlighting";
