@@ -1,0 +1,14 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+Thomas Randall is a Graduate Research Assistant at Clemson University in the School of Computing (Go Tigers! 🐯).
+
+My research focuses on performance optimization and autotuning for High Performance Computing (HPC) workloads and applications, especially with GPUs!
+I am working towards my PhD dissertation at Clemson and have published research with scientists at Argonne and Oak Ridge National Laboratories.
+You can also regularly meet me in person at the SuperComputing conference -- for 2024 we will be in Atlanta, GA!
+
+My long-term career aspirations are to work as a Computer Scientist in the DoE National Labs and to continue serving the community at SuperComputing and other prestigious conferences in the field.
+
