@@ -5,3 +5,12 @@
 /* @import "base";
 @import "layout";
 @import "syntax-highlighting"; */
+
+$content-width: 800px;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
