@@ -10,11 +10,18 @@ layout: post
 
 <h2>Media</h2>
 <ul>
-<li><a href="{{ page.paper }}">Self-Hosted Paper</li>
+<li><a href="{{ page.paper }}">Self-Hosted Paper</a></li>
 {% if page.slides %}
 <li><a href="{{ page.slides }}">Presentation Slides</a></li>
 {% endif %}
-{% if page.videos %}
+{% if page.link_videos %}
+  {% assign pvids = page.link_videos | split: "," %}
+  {% for vid in pvids %}
+    <li>
+	  <a href="{{ vid }}">Recorded Presentation</a>
+	</li>
+  {% endfor %}
+{% elsif page.videos %}
   {% assign pvids = page.videos | split: "," %}
   {% for vid in pvids %}
     <li>
@@ -30,13 +37,6 @@ layout: post
 	    <source src="{{ vid }}" type="video/mp4">
 		<source src="{{ vid | replace: '.mp4', '.ogg' }}" type="video/ogg">
 	  </video>
-	</li>
-  {% endfor %}
-{% elsif page.link_videos %}
-  {% assign pvids = page.link_videos | split: "," %}
-  {% for vid in pvids %}
-    <li>
-	  <a href="{{ vid }}">Recorded Presentation</a>
 	</li>
   {% endfor %}
 {% endif %}
