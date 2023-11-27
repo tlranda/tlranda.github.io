@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h4>Blog</h4>
+<h4>Resources</h4>
 {% for post in site.posts %}
   <time>{{ post.date | date: "%Y/%M/%D" }}</time>
   <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
