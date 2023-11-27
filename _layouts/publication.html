@@ -1,0 +1,52 @@
+---
+layout: post
+---
+
+<h2>Quick Links</h2>
+<ul>
+  <li><a href="{{ page.doi }}">Publication DOI</a></li>
+  <li><a href="{{ page.source }}">Open-Source Code</a></li>
+</ul>
+
+<h2>Media</h2>
+<ul>
+<li><a href="{{ page.paper }}">Self-Hosted Paper</li>
+{% if page.slides %}
+<li><a href="{{ page.slides }}">Presentation Slides</a></li>
+{% endif %}
+{% if page.videos %}
+  {% assign pvids = page.videos | split: "," %}
+  {% for vid in pvids %}
+    <li>
+	  <input type="checkbox" id="{{ vid }}" class="checkhax">
+	  <label for="{{ vid }}" class="labelhax video">
+	  {% if vid contains "short" %}
+	  Short Video
+	  {% else %}
+	  Extended Video
+	  {% endif %}
+	  </label>
+	  <video width="100%" height="97%" controls preload="metadata" class="videohax">
+	    <source src="{{ vid }}" type="video/mp4">
+		<source src="{{ vid | replace: '.mp4', '.ogg' }}" type="video/ogg">
+	  </video>
+	</li>
+  {% endfor %}
+{% elsif page.link_videos %}
+  {% assign pvids = page.link_videos | split: "," %}
+  {% for vid in pvids %}
+    <li>
+	  <a href="{{ vid }}">Recorded Presentation</a>
+	</li>
+  {% endfor %}
+{% endif %}
+</ul>
+
+<h2>Publication Details</h2>
+
+<p>Appears in {{ page.conference_full }} by authors: {{ page.authors }}</p>
+
+<h3>Abstract</h3>
+<p>{{ page.abstract }}</p>
+
+

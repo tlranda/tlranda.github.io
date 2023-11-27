@@ -46,6 +46,49 @@ time {
   max-width: $content-width;
   margin: 0 auto;
 }
+.more {
+  display: none;
+}
+.abstract_text {
+  font-size: small;
+}
+
+/* CSS Haxx */
+input[type="checkbox"].checkhax {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  opacity: 0;
+}
+label.labelhax {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-decoration: underline;
+}
+label.labelhax::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 50%;
+  left: 10px;
+  margin-top: -8px;
+}
+input[type="checkbox"].checkhax:checked ~ label::before {
+  margin-left: -4px;
+  margin-top: -4px;
+}
+video.videohax {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease;
+}
+input[type="checkbox"].checkhax:checked ~ video {
+  max-height: 100%;
+}
 
 aside {
   position: fixed;

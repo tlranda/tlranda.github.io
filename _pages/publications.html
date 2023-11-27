@@ -5,10 +5,24 @@ permalink: /publications/
 ---
 
 <h4>Publications</h4>
+<script type="text/javascript" src="/_scripts/js/abstractExpand.js"></script>
+
+<!-- This sorting order isn't working yet for some reason -->
+{% assign spubs = site.publications | sort: "date" | reversed %}
+
 <ul>
-{% for pub in site.publications %}
+{% for pub in spubs %}
+  {% assign idx = forloop.index %}
   <time>{{ pub.date | date: "%Y - %m - %d" }}</time>
   <h3><a href="{{ pub.url | prepend: site.baseurl }}">{{ pub.title }}</a></h3>
+  {% if pub.short_abstract and pub.more_abstract %}
+  <p class="abstract_text">{{ pub.short_abstract }}
+  <span id="dots_{{ idx }}" class="abstract_text">...</span>
+  <span id="more_{{ idx }}" class="more abstract_text">{{ pub.more_abstract }}</span>
+  </p>
+  <button onclick="abstractExpand({{ idx }})" id="button_{{ idx }}">More</button>
+  {% endif %}
+  <br><hr>
 {% endfor %}
 </ul>
 

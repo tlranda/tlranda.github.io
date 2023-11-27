@@ -34,9 +34,12 @@ plugins:
   - jekyll-feed
 sass:
   sass_dir: _sass
-include: ['_pages']
+include:
+ - '_pages'
+ - '_scripts'
 collections:
  publications:
+   output: true
    permalink: /:collection/:path
 
 # Exclude from processing.
