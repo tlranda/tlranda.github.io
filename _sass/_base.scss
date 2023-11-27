@@ -1,13 +1,14 @@
 $content-width: 800px;
-$main-color: #19ccaa;
+$main-color: #420968;
+$main-font-color: #262626;
 $font-style: 'Open Sans', sans-serif;
-$font-color: #262626;
-$link-color: #425469;
+$font-color: $main-font-color;
+$link-color: $main-font-color;
 $link-hover-color: $main-color;
 $heading-font: 'Muli', sans-serif;
-$heading-font-color: #425469;
-$light: #e7edf4;
-$header: #1d1425;
+$heading-font-color: $main-font-color;
+$light: #D09EFF;
+$header: #EE5724;
 
 *,
 *::before,
@@ -15,8 +16,5 @@ $header: #1d1425;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-* {
-  text-decoration: underline;
 }
 

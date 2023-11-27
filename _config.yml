@@ -18,7 +18,6 @@ email: tlranda@clemson.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Thomas Randall is a Graduate Research Assistant and PhD Candidate at Clemson University's School of Computing.
   This personal webspace includes professional links, blogs, and useful resources!
-basehref: "http://localhost:4000/"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tlranda.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -35,7 +34,10 @@ plugins:
   - jekyll-feed
 sass:
   sass_dir: _sass
-include: ['_pages', '_publications']
+include: ['_pages']
+collections:
+ publications:
+   permalink: /:collection/:path
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

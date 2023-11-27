@@ -1,24 +1,16 @@
 ---
-layout: page
+layout: default
 title: Publications
 permalink: /publications/
 ---
 
+<h4>Publications</h4>
 <ul>
-{% for publication in site.publications %}
-  <li>
-    <ul>
-	  {% if publication.electives %}<abbr class="elective">{{ publication.electives }}</abbr>{% endif %}
-	  <li>{{ publication.date }} | {{ publication.conference }}</li>
-	  <li><a href="{{ publication.doi }}">{{ publication.title }}</a></li>
-	  <li>{{ publication.authors }}</li>
-	  <li>{{ publication.conference_full }}</li>
-	  <li><a href="{{ publication.paper }}">Published Paper</a></li>
-	  <li><a href="{{ publication.source }}">Source Code</a></li>
-	  <li><a href="{{ publication.slides }}">Featured Talk Slides</a></li>
-	  <!-- Videos to be placed here -->
-	</ul>
-  </li>
+{% for pub in site.publications %}
+  <time>{{ pub.date | date: "%Y - %m - %d" }}</time>
+  <h3><a href="{{ pub.url | prepend: site.baseurl }}">{{ pub.title }}</a></h3>
 {% endfor %}
 </ul>
+
+<p>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
