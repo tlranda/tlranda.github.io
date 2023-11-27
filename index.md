@@ -2,14 +2,9 @@
 layout: default
 ---
 
-<h2>Main Page</h2>
+<h2>Welcome!</h2>
 
-Primary content goes here.
+This website serves as a convenient one-stop-shop for links to all of my research work, socials, and a variety of things that I find interesting.
+I'm not an HTML wizard, so hopefully it renders well on your device (desktop should be fine, YMMV on mobile).
+If you have simple ideas for simple improvements, by all means share them!
 
-<pre>
-site: {{ site | jsonify | escape }}
-page: {{ page | jsonify | escape }}
-layout: {{ layout | jsonify | escape }}
-content: {{ content | jsonify | escape }}
-paginator: {{ paginator | jsonify | escape }}
-</pre>

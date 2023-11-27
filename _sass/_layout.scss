@@ -7,9 +7,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 600;
   color: $heading-font-color;
   font-family: $heading-font;
@@ -27,8 +25,7 @@ h1 {
 h2 {
   font-size: 2em;
 }
-a,
-a:visited {
+a, a:visited {
   color: $link-color;
   text-decoration: underline;
   font-weight: bold;
@@ -42,21 +39,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-header {
-  background: $header;
-  // padding: 0px 15px;
-  text-align: center;
-  margin-top: 20px;
-  // height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main {
-  padding: 0 15px;
-  max-width: $content-width;
-  margin: 0 auto;
-}
 time {
   color: $main-font-color;
 }
@@ -64,8 +46,6 @@ time {
   max-width: $content-width;
   margin: 0 auto;
 }
-
-/* Aside */
 
 aside {
   position: fixed;
@@ -110,8 +90,58 @@ aside {
 	}
   }
 }
+header {
+  background: $header;
+  // padding: 0px 15px;
+  text-align: center;
+  margin-top: 20px;
+  // height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  padding: 0 15px;
+  max-width: $content-width;
+  margin: 0 auto;
+}
 footer {
   background: $header;
   text-align: center;
-  padding: 40px;
+  border-top: 1px;
+  padding: 40px 0 100px;
+  .wrapper {
+    max-width: calc( $content-width - (30px*2));
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px;
+  }
+  .footer-heading {
+    // font-size: 10px;
+	margin-bottom: 15px;
+  }
+  .footer-col-wrapper {
+    font-size: 15px;
+	margin-left: -15px;
+  }
+  .footer-col {
+    float: left;
+	margin-bottom: 15px;
+	padding-left: 15px;
+  }
+  .footer-col-1 {
+    width: calc(35%-(30px/2));
+  }
+  .footer-col-2 {
+  	width: calc(20% - (30px/2));
+  }
+  .svg-icon {
+    width: 16px;
+	height: 16px;
+	display: inline-block;
+	// padding-right: 5px;
+	vertical-align: text-top;
+  }
 }
+

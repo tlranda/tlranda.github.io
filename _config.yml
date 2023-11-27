@@ -23,7 +23,7 @@ url: "https://tlranda.github.io" # the base hostname & protocol for your site, e
 #twitter_username: jekyllrb
 github_username:  tlranda
 linkedin_username: thomas-l-randall
-researchgate_uesrname: Thomas-Randall-5
+researchgate_username: Thomas-Randall-5
 
 # Build settings
 markdown: kramdown
