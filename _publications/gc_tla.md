@@ -6,6 +6,7 @@ date: 2023-06-21
 authors: Thomas Randall, Jaehoon Koo, Brice Videau, Michael Kruse, Xingfu Wu, Paul Hovland, Mary Hall, Rong Ge, Prasanna Balaprakash
 conference: "ICS'23"
 conference_full: "Proceedings of the 2023 International Conference on Supercomputing (ICS '23)"
+acm: true
 paper: "/Media/GC_TLA/GC-TLA.pdf"
 source: "https://github.com/tlranda/GC_TLA"
 slides: "/Media/GC_TLA/ICS23_GC_TLA.pdf"
