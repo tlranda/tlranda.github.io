@@ -10,7 +10,15 @@ layout: post
 
 <h2>Media</h2>
 <ul>
-<li><a href="{{ page.paper }}">Self-Hosted Paper</a></li>
+<li><a href="{{ page.paper }}">Self-Hosted Paper</a>
+<p>
+© Thomas Randall {% page.date | date "%y" %}.
+This is the author’s version of the work.
+It is posted here for your personal use.
+Not for redistribution.
+The definitive version was published in {% page.conference_full %}, {% page.doi %}
+</p>
+</li>
 {% if page.slides %}
 <li><a href="{{ page.slides }}">Presentation Slides</a></li>
 {% endif %}
@@ -48,5 +56,3 @@ layout: post
 
 <h3>Abstract</h3>
 <p>{{ page.abstract }}</p>
-
-
