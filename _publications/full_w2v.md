@@ -6,6 +6,7 @@ date: 2021-06-04
 authors: Thomas Randall, Tyler Allen, and Rong Ge
 conference: "ICS'21"
 conference_full: "Proceedings of the 2021 International Conference on Supercomputing (ICS '21)"
+acm: true
 electives: "Best Paper"
 paper: "/Media/FULL_W2V/FULL-W2V.pdf"
 source: "https://github.com/tlranda/FULL-W2V"
