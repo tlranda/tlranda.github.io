@@ -1,7 +1,63 @@
+// Light mode color variables
+html, html[data-theme="light"] {
+	// Text
+	--text-color: #262626;
+	--link-color: #262626;
+	--link-hover-color: #262626;
+	// Background
+	--main-color: #ECECEC;
+	--highlight-color: #0D0910;
+	--header-color: #908899;
+}
+// Dark mode color variables
+html[data-theme="dark"] {
+	// Text
+	--text-color: #ECECEC;
+	--link-color: #ECECEC;
+	--link-hover-color: #ECECEC;
+	// Background
+	--main-color: #0D0910;
+	--highlight-color: #262626;
+	--header-color: #908899;
+}
+// Browser indicates dark mode is preferred
+@media (prefers-color-scheme: dark) {
+	// Dark mode color variables
+	html, html[data-theme="dark"] {
+		// Text
+		--text-color: #ECECEC;
+		--link-color: #ECECEC;
+		--link-hover-color: #ECECEC;
+		// Background
+		--main-color: #0D0910;
+		--highlight-color: #262626;
+		--header-color: #908899;
+	}
+	// Light mode color variables
+	html[data-theme="light"] {
+		// Text
+		--text-color: #262626;
+		--link-color: #262626;
+		--link-hover-color: #262626;
+		// Background
+		--main-color: #ECECEC;
+		--highlight-color: #0D0910;
+		--header-color: #908899;
+	}
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  color: $font-color;
-  background: $light;
+  color: var(--text-color);
+  background: var(--main-color);
   font-family: $font-style;
   font-size: 1.1em;
   line-height: 1.6;
@@ -9,29 +65,29 @@ body {
 }
 h1, h2, h3 {
   font-weight: 600;
-  color: $heading-font-color;
+  color: var(--text-color);
   font-family: $heading-font;
   line-height: 1.5;
 }
 h1 {
-  color: $main-color;
+  color: var(--text-color);
   font-size: 2.5em;
   a,
   a:visited {
     text-decoration: none;
-	color: $main-color;
+	color: var(--link-color);
   }
 }
 h2 {
   font-size: 2em;
 }
 a, a:visited {
-  color: $link-color;
+  color: var(--link-color);
   text-decoration: underline;
   font-weight: bold;
 }
 a:hover {
-  color: $link-hover-color;
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 ul {
@@ -40,7 +96,7 @@ ul {
   padding: 0;
 }
 time {
-  color: $main-font-color;
+  color: var(--main-color);
 }
 .container {
   max-width: $content-width;
@@ -101,10 +157,10 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
-  background: $light;
+  background: var(--main-color);
   width: 100%;
   z-index: 2;
-  border-bottom: 1px solid lighten($light, 30%);
+  border-bottom: 1px solid var(--highlight-color);
   box-shadow: 0px 1px 1px RGBA(4,25,54,0.1);
   nav {
     float: left;
@@ -126,9 +182,9 @@ aside {
 		  margin-bottom: -1px;
 		  &:hover,
 		  *:active {
-		    background: $header;
+		    background: var(--header-color);
 			text-decoration: none;
-			color: $main-color;
+			color: var(--main-color);
 		  }
 		}
 	  }
@@ -141,7 +197,7 @@ aside {
   }
 }
 header {
-  background: $header;
+  background: var(--header-color);
   // padding: 0px 15px;
   text-align: center;
   margin-top: 20px;
@@ -156,7 +212,7 @@ main {
   margin: 0 auto;
 }
 footer {
-  background: $header;
+  background: var(--header-color);
   text-align: center;
   border-top: 1px;
   padding: 40px 0 100px;

@@ -1,20 +1,10 @@
+// Variables for fonts and width
 $content-width: 800px;
-$main-color: #0D0910; // 420968
-$main-font-color: #262626;
 $font-style: 'Open Sans', sans-serif;
-$font-color: $main-font-color;
-$link-color: $main-font-color;
-$link-hover-color: $main-color;
 $heading-font: 'Muli', sans-serif;
-$heading-font-color: $main-font-color;
-$light: #ECECEC; // d09eff
-$header: #908899; // ee5724
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+// Color variables for theme
+$color-night: #0D0910;
+$color-eerie-black: #262626;
+$color-anti-flash-white: #ECECEC;
+$color-taupe-gray: #908899;
 
