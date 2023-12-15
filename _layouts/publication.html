@@ -2,6 +2,26 @@
 layout: post
 ---
 
+{% if page.key_image %}
+<br>
+<img src="{{ page.key_image }}" class="centered_image"
+alt=
+{% if page.key_image_alt_text %}
+"{{ page.key_image_alt_text }}"
+{% else %}
+"IMAGE NAME: {{ page.key_image }}"
+{% endif %}
+title=
+{% if page.key_image_alt_text %}
+"{{ page.key_image_alt_text }}"
+{% else %}
+"IMAGE NAME: {{ page.key_image }}"
+{% endif %}
+>
+</img>
+<br>
+{% endif %}
+
 <h2>Quick Links</h2>
 <ul>
   <li><a href="{{ page.doi }}">Publication DOI</a></li>

@@ -15,13 +15,36 @@ permalink: /publications/
   {% assign idx = forloop.index %}
   <time>{{ pub.date | date: "%Y - %m - %d" }}</time>
   <h3><a href="{{ pub.url | prepend: site.baseurl }}">{{ pub.title }}</a></h3>
-  {% if pub.short_abstract and pub.more_abstract %}
-  <p class="abstract_text">{{ pub.short_abstract }}
-  <span id="dots_{{ idx }}" class="abstract_text">...</span>
-  <span id="more_{{ idx }}" class="more abstract_text">{{ pub.more_abstract }}</span>
-  </p>
-  <button onclick="abstractExpand({{ idx }})" id="button_{{ idx }}">More</button>
-  {% endif %}
+  <div id="Block_{{ pub.title }}">
+    <div id="Key_Image_{{ pub.title }}" class="pub_key_image_div">
+	{% if pub.key_image %}
+	<img src="{{ pub.key_image }}" style="height: 200px"
+	alt=
+	{% if pub.key_image_alt_text %}
+	"{{ pub.key_image_alt_text }}"
+	{% else %}
+	"IMAGE NAME: {{ pub.key_image }}"
+	{% endif %}
+	title=
+	{% if pub.key_image_alt_text %}
+	"{{ pub.key_image_alt_text }}"
+	{% else %}
+	"IMAGE NAME: {{ pub.key_image }}"
+	{% endif %}
+	>
+	</img>
+	{% endif %}
+	</div>
+	<div id="Info_{{ pub.title }}">
+      {% if pub.short_abstract and pub.more_abstract %}
+      <p class="abstract_text">{{ pub.short_abstract }}
+        <span id="dots_{{ idx }}" class="abstract_text">...</span>
+        <span id="more_{{ idx }}" class="more abstract_text">{{ pub.more_abstract }}</span>
+      </p>
+      <button onclick="abstractExpand({{ idx }})" id="button_{{ idx }}">More</button>
+      {% endif %}
+    </div>
+  </div>
   <br><hr>
 {% endfor %}
 </ul>

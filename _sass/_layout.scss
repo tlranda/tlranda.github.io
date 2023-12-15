@@ -96,8 +96,20 @@ ul {
   padding: 0;
 }
 time {
-  color: var(--main-color);
+  color: var(--text-color);
 }
+img.centered_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+div.pub_key_image_div {
+  float: left;
+  height: 200px;
+  padding-right: 10px;
+}
+
 .container {
   max-width: $content-width;
   margin: 0 auto;
