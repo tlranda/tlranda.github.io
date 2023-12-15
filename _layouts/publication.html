@@ -30,6 +30,9 @@ title=
 
 <h2>Media</h2>
 <ul>
+{% if page.arxiv %}
+<li><a href="{{ page.arxiv }}">arXiv Posting</a></li>
+{% endif %}
 <li><a href="{{ page.paper }}">Self-Hosted Paper</a>
 {% if page.acm %}
 <p>
