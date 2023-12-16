@@ -7,4 +7,23 @@ $color-night: #0D0910;
 $color-eerie-black: #262626;
 $color-anti-flash-white: #ECECEC;
 $color-taupe-gray: #908899;
+// Navbar heights adjusted for different devices
+$navbar-height-desktop: 50px;
+$mobile-width: 800px;
+$navbar-height-mobile: 99px;
+@mixin navbar-styles($top-margin) {
+  aside {
+  	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	@media screen and (max-width: $mobile-width) {
+	  // Adjustments for smaller screens
+	}
+  }
+  header {
+    margin-top: $top-margin;
+  }
+}
 
