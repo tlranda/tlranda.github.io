@@ -249,7 +249,8 @@ footer {
     width: calc(35%-(30px/2));
   }
   .footer-col-2 {
-  	width: calc(20% - (30px/2));
+  	//width: calc(20% - (30px/2));
+	float: right;
   }
   .svg-icon {
     width: 16px;
