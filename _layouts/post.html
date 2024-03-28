@@ -6,6 +6,13 @@ layout: default
 <time>
 Published: {{ page.date | date: "%Y - %m - %d" }}{% if page.author %} : {{ page.author }}{% endif %}{% if page.meta %} : {{ page.meta }}{% endif %}
 </time>
+<br>
+{% if page.last_edited %}
+<time>
+Last Edited: {{ page.last_edited | date: "%Y - %m - %d" }}
+</time>
+<br>
+{% endif %}
 
 {{ content }}
 
