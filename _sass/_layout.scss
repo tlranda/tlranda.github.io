@@ -160,8 +160,8 @@ input[type="checkbox"].checkhax:checked ~ video {
 .mdborderedtable {
   border-collapse: collapse;
   > table, td, th {
-    border: 1px solid black;
-	padding: 5px;
+    border: 1px solid var(--text-color);
+	padding: 10px;
   }
 }
 
