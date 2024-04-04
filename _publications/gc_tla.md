@@ -2,6 +2,7 @@
 layout: publication
 title: "Transfer-learning-based Autotuning using Gaussian Copula"
 doi: "https://dl.acm.org/doi/10.1145/3577193.3593712"
+pub_order: 1
 date: 2023-06-21
 authors: Thomas Randall, Jaehoon Koo, Brice Videau, Michael Kruse, Xingfu Wu, Paul Hovland, Mary Hall, Rong Ge, Prasanna Balaprakash
 conference: "ICS'23"

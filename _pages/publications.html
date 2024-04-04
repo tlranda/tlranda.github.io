@@ -8,7 +8,7 @@ permalink: /publications/
 <script type="text/javascript" src="/_scripts/js/abstractExpand.js"></script>
 
 <!-- This sorting order isn't working yet for some reason -->
-{% assign spubs = site.publications | sort: "date" | reversed %}
+{% assign spubs = site.publications | sort: "pub_order" %}
 
 <ul>
 {% for pub in spubs %}

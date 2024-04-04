@@ -2,6 +2,7 @@
 layout: publication
 title: "FULL-W2V: Fully Exploiting Data Reuse for W2V on GPU-Accelerated Systems"
 doi: "https://doi.org/10.1145/3447818.3460373"
+pub_order: 2
 date: 2021-06-04
 authors: Thomas Randall, Tyler Allen, and Rong Ge
 conference: "ICS'21"
