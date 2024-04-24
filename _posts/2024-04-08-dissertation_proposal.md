@@ -14,3 +14,8 @@ You can <a href="{{ current_pdf }}">download my dissertation proposal here</a>, 
 <br>
 <object data="{{ site.url }}{{ site.baseurl }}{{ current_pdf }}" width="1000" height="1000" type="application/pdf"></object>
 
+{% assign current_pdf = "/Media/Assets/ASystemicApproachToMaximizeHeterogeneousSystemPerformance.pdf" %}
+You can also <a href="{{ current_pdf }}">download my slides here</a>, or they should render below in the page:
+<br>
+<object data="{{ site.url }}{{ site.baseurl }}{{ current_pdf }}" width="1000" height="1000" type="application/pdf"></object>
+
