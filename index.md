@@ -12,6 +12,8 @@ If you'd like a quick link to my poster's repository, [that's right here](https:
 I'd love to hear from you on GitHub and reconnect, so feel free to [add yourself to this issue](https://github.com/tlranda/lm_math/issues/1) to let me know you came by.
 The poster itself will be available digitally on this site at a later date.
 
+<hr></hr>
+
 This website serves as a convenient one-stop-shop for links to all of my research work, socials, and a variety of things that I find interesting.
 I'm not an HTML wizard, so hopefully it renders well on your device (desktop should be fine, YMMV on mobile).
 If you have ideas for improvements, by all means share them via an issue or pull request on the [website repository](https://github.com/tlranda/tlranda.github.io)!
