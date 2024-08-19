@@ -11,7 +11,7 @@ permalink: /publications/
 {% assign spubs = site.publications | sort: "pub_order" %}
 
 <ul>
-{% for pub in spubs %}
+{% for pub in spubs reversed %}
   {% assign idx = forloop.index %}
   <time>{{ pub.date | date: "%Y - %m - %d" }}</time>
   <h3><a href="{{ pub.url | prepend: site.baseurl }}">{{ pub.title }}</a></h3>
@@ -32,7 +32,6 @@ permalink: /publications/
 	"IMAGE NAME: {{ pub.key_image }}"
 	{% endif %}
 	>
-	</img>
 	{% endif %}
 	</div>
 	<div id="Info_{{ pub.title }}">
