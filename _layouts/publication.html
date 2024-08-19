@@ -18,7 +18,6 @@ title=
 "IMAGE NAME: {{ page.key_image }}"
 {% endif %}
 >
-</img>
 <br>
 {% endif %}
 
@@ -33,16 +32,16 @@ title=
 {% if page.arxiv %}
 <li><a href="{{ page.arxiv }}">arXiv Posting</a></li>
 {% endif %}
-<li><a href="{{ page.paper }}">Self-Hosted Paper</a>
-{% if page.acm %}
+<li><a href="{{ page.paper }}">Self-Hosted Publication</a>
 <p>
 © Thomas Randall {{ page.date | date: "%Y" }}.
 This is the author’s version of the work.
 It is posted here for your personal use.
 Not for redistribution.
+{% if page.acm %}
 The definitive version was published in {{ page.conference_full }}, <a href="{{ page.doi }}">{{ page.doi }}</a>.
-</p>
 {% endif %}
+</p>
 </li>
 {% if page.slides %}
 <li><a href="{{ page.slides }}">Presentation Slides</a></li>

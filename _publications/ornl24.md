@@ -5,7 +5,7 @@ pub_order: 3
 date: 2024-07-31
 authors: Thomas Randall, Rong Ge, and Prasanna Balaprakash
 conference: "DOE Cybercon'24"
-full_conference: "DOE Cybersecurity and Technology Innovation 2024"
+conference_full: "DOE Cybersecurity and Technology Innovation 2024"
 acm: false
 paper: "/Media/ORNL24/OMNI_Poster.pdf"
 source: "https://github.com/tlranda/lm_math"
