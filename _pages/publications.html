@@ -43,6 +43,8 @@ permalink: /publications/
       <button onclick="abstractExpand({{ idx }})" id="button_{{ idx }}">More</button>
       {% elsif pub.abstract %}
       <p class="abstract_text">{{ pub.abstract }}</p>
+      {% else %}
+      <p class="abstract_text">No abstract provided</p>
       {% endif %}
     </div>
   </div>
