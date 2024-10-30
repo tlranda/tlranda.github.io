@@ -9,6 +9,7 @@ conference_full: "International Green and Sustainable Computing Conference 2024"
 acm: false
 paper: "/Media/Deepgreen/IGSC_Immersion_IEEE.pdf"
 source: "https://github.com/tlranda/LibSensorsTools"
+slides: "/Media/Deepgreen/IGSC_Presentation.pdf"
 abstract: "The growing need for energy-efficient computing has led to many novel system innovations, including liquid immersion cooling. While many myths about the technology have been dispelled, the actual impact of this cooling solution on thermal conditions in real computing scenarios remains under-reported and under-studied. In this work, we collate data from multiple system monitoring tools to perform case-study analyses of the thermal behaviors of immersed hardware, aiming to evaluate the effectiveness of liquid immersion cooling for high-performance and datacenter applications."
 short_abstract: "The growing need for energy-efficient computing has led to many novel system innovations, including liquid immersion cooling. While many myths about the technology have been dispelled, the actual impact of this cooling solution on thermal conditions in real computing scenarios remains under-reported and"
 more_abstract: "under-studied. In this work, we collate data from multiple system monitoring tools to perform case-study analyses of the thermal behaviors of immersed hardware, aiming to evaluate the effectiveness of liquid immersion cooling for high-performance and datacenter applications."
