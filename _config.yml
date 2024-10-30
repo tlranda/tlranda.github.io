@@ -26,6 +26,7 @@ linkedin_username: thomas-l-randall
 researchgate_username: Thomas-Randall-5
 
 # Build settings
+future: true # Ensure future-dated articles get published
 markdown: kramdown
 kramdown:
   input: GFM
