@@ -1,6 +1,7 @@
 ---
 layout: publication
 title: "Thermal Behaviors in Liquid Immersion Cooling under Various Workloads: a Case Study"
+doi: "https://doi.org/10.1109/IGSC64514.2024.00030"
 pub_order: 4
 date: 2024-11-02
 authors: Thomas Randall, Bennett Cooper, Naman Kulshreshtha, and Rong Ge
