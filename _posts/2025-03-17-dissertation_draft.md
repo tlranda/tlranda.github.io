@@ -14,5 +14,7 @@ You can <a href="{{ current_pdf }}">download my dissertation here</a>, or it sho
 <br>
 <object data="{{ site.url }}{{ site.baseurl }}{{ current_pdf }}" width="1000" height="1000" type="application/pdf"></object>
 
-Slides will be available at a later time.
+{% assign slide_pdf = "/Media/Assets/Defense.pdf" %}
+You may also <a href="{{ slide_pdf }}">download the presentation slides here</a>.
+A recording is not available at this time.
 
