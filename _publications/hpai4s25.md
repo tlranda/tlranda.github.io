@@ -1,6 +1,7 @@
 ---
 layout: publication
 title: "Is In-Context Learning Feasible for HPC Performance Autotuning?"
+doi: "https://doi.org/10.1109/IPDPSW66978.2025.00152"
 pub_order: 5
 date: 2025-06-04
 authors: Thomas Randall, Akhilesh Bondapalli, Rong Ge, and Prasanna Balaprakash
