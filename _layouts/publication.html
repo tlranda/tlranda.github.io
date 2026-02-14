@@ -21,18 +21,24 @@ title=
 <br>
 {% endif %}
 
+{% if page.doi or page.source %}
 <h2>Quick Links</h2>
 <ul>
+  {% if page.doi %}
   <li><a href="{{ page.doi }}">Publication DOI</a></li>
+  {% endif %}
+  {% if page.source %}
   <li><a href="{{ page.source }}">Open-Source Code</a></li>
+  {% endif %}
 </ul>
+{% endif %}
 
 <h2>Media</h2>
 <ul>
 {% if page.arxiv %}
 <li><a href="{{ page.arxiv }}">arXiv Posting</a></li>
 {% endif %}
-<li><a href="{{ page.paper }}">Self-Hosted Publication</a>
+<li><a href="{{ page.paper }}">{% if page.noselfhost %}Paper Link{% else %}Self-Hosted Publication{% endif %}</a>
 <p>
 © Thomas Randall {{ page.date | date: "%Y" }}.
 This is the author’s version of the work.

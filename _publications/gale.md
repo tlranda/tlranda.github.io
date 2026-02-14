@@ -2,7 +2,7 @@
 layout: publication
 title: "GALE: Leveraging Heterogeneous Systems for Efficient Unstructured Mesh Data Analysis"
 doi: "https://doi.org/10.1109/TVCG.2025.3634637"
-pub_order: 6
+pub_order: 7
 date: 2025-12-05
 authors: Guoxi Liu, Thomas Randall, Rong Ge, Federico Iuricich
 conference: "IEEE TVCG'25"
