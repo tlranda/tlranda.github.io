@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Website QR Code (Homepage)"
+title: "Website QR Codes"
 date: 2026-02-14
 last_edited: 2026-02-17
 categories: qol
